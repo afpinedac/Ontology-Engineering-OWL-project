@@ -1,0 +1,1151 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:familia="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <Ontology rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneAbuela -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneAbuela">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneAbuelo -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneAbuelo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneBisabuela -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneBisabuela">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneBisabuelo -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneBisabuelo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermana -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermana">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermanos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hermana"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermano -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermano">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermanos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hermano"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermanos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermanos">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHija -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHija">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hija"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijo -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hijo"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijos">
+        <inverseOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneMadre -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneMadre">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Madre"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadre -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadre">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Padre"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePareja -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePareja"/>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTia -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTio -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#edad -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Adulto -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Adulto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hermana -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hermana">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermana"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermano"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hermano -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hermano">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermana"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermano"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hija -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hija">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadre"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hijo -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hijo">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+        <disjointWith rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Madre -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Madre">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHija"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijo"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Padre -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Padre">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHija"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHijo"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Sobrina -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Sobrina">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTia"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTio"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Sobrino -->
+
+    <Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Sobrino">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTia"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTio"/>
+                                <someValuesFrom rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaM -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+        <familia:tieneHija rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaP -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbueloM -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbueloM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneHija rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbueloP -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbueloP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Andres -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Andres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneHermana rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Camilo"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Camilo -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Camilo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneHermana rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Andres"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar"/>
+        <familia:edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</familia:edad>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneHermana rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Andres"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Camilo"/>
+        <familia:tieneHija rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Kata"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Jaime -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Jaime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneHermana rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+        <familia:tieneHermana rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nohora"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaM"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Kata -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Kata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Andres"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Camilo"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Sobrino1"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+        <familia:tieneHermana rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nohora"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Jaime"/>
+        <familia:tieneHija rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Andres"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Camilo"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaM"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbueloM"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nohora -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nohora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Mujer"/>
+        <familia:tieneHermana rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Nayme"/>
+        <familia:tieneHermano rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Jaime"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaM"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbueloP"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Omar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneHija rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Andres"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Camilo"/>
+        <familia:tieneHijo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Glenn"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbuelaP"/>
+        <familia:tienePadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#AbueloP"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Sobrino1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Sobrino1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+        <familia:tieneMadre rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Laura"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#parejaH1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#parejaH1">
+        <familia:tienePareja rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#parejaM2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#parejaM2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#parejaM2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#hi">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#he">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reglaTieneBisabuela</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneMadre"/>
+                                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneBisabuela"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reglaTieneAbuelo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadre"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneAbuelo"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reglaTieneBisabuelo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadre"/>
+                                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneBisabuelo"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_esAdulto</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Adulto"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#edad"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#p"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#p"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#e"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reglaTieneHermano</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermano"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Hombre"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermano"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esAdulto</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Persona"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#edad"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#p"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.w3.org/2002/07/owl#e"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#Adulto"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reglaTieneTia</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#hi"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermana"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTia"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#hi"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reglaTieneTio</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#hi"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneHermano"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#p"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#he"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneTio"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#hi"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#he"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reglaTieneAbuela</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tienePadres"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneMadre"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#y"/>
+                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/2/familia#tieneAbuelo"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+

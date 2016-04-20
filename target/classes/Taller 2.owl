@@ -1,0 +1,1302 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneAbuela -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneAbuela"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneAbuelo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneAbuelo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneBisabuela -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneBisabuela"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneBisabuelo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneBisabuelo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermana -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermana">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermanos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermana"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermano -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermano">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermanos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermano"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermanos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermanos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHija -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHija">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hija"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hijo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijos">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Madre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Padre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hija -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hija">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hijo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hijo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Madre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Madre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Padre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Padre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Alina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Alina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+        <tieneHermano rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#HermanoImaginario"/>
+        <tieneHermano rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Samuel"/>
+        <tieneMadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Libia"/>
+        <tienePadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Elbers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Don_Manuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Don_Manuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Doña_Sofia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Doña_Sofia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Elbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Elbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+        <tieneHermano rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Miguel"/>
+        <tieneMadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Doña_Sofia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#HermanoImaginario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#HermanoImaginario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+        <tieneHermana rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Alina"/>
+        <tieneHermano rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Samuel"/>
+        <tieneMadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Libia"/>
+        <tienePadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Elbers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Libia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Libia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+        <tieneHermana rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Rosiris"/>
+        <tienePadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Don_Manuel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Miguel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Miguel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+        <tieneHermano rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Elbers"/>
+        <tieneMadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Doña_Sofia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Rosiris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Rosiris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+        <tieneHermana rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Libia"/>
+        <tienePadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Don_Manuel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Samuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Samuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+        <tieneHermana rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Alina"/>
+        <tieneHermano rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#HermanoImaginario"/>
+        <tieneMadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Libia"/>
+        <tienePadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Elbers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Suki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Suki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+        <tieneMadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Alina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Toño -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Toño">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+        <tieneMadre rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Alina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir hermano a partir de mismos padres</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                                <swrl:argument2 rdf:resource="z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre"/>
+                                        <swrl:argument1 rdf:resource="h"/>
+                                        <swrl:argument2 rdf:resource="y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre"/>
+                                                <swrl:argument1 rdf:resource="h"/>
+                                                <swrl:argument2 rdf:resource="z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+                                                        <swrl:argument1 rdf:resource="h"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermano"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir Bisabuelo a partir del padre de los padres de los padres</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                                <swrl:argument1 rdf:resource="p"/>
+                                <swrl:argument2 rdf:resource="a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre"/>
+                                        <swrl:argument1 rdf:resource="a"/>
+                                        <swrl:argument2 rdf:resource="b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneBisabuelo"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir abuelo apartir del padre de los padres</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre"/>
+                                <swrl:argument1 rdf:resource="p"/>
+                                <swrl:argument2 rdf:resource="a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneAbuelo"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hermano es un hombre con hermanos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermanos"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                                <swrl:argument2 rdf:resource="y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermano"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Padre es hombre con hijos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijos"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                                <swrl:argument2 rdf:resource="y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Padre"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir Sobrino a partir de tiene Tia</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTia"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrino"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir Sobrino a partir de tio</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTio"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrino"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir hermano a partir del hermano</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermano"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hombre"/>
+                                <swrl:argument1 rdf:resource="y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermano"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir hermana a partir de mismos padres</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                                <swrl:argument2 rdf:resource="z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadre"/>
+                                        <swrl:argument1 rdf:resource="h"/>
+                                        <swrl:argument2 rdf:resource="y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre"/>
+                                                <swrl:argument1 rdf:resource="h"/>
+                                                <swrl:argument2 rdf:resource="z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+                                                        <swrl:argument1 rdf:resource="h"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermana"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hermana es una mujer con hermanos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermanos"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                                <swrl:argument2 rdf:resource="y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Hermana"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madre es una mujer con hijos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHijos"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                                <swrl:argument2 rdf:resource="y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Madre"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir sobrina a partir de tiene tia</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTia"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrina"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir sobrina a partir de tiene tio</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTio"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Mujer"/>
+                                <swrl:argument1 rdf:resource="x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#Sobrina"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir tia a partir de hermanas de los padres</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermana"/>
+                                <swrl:argument1 rdf:resource="y"/>
+                                <swrl:argument2 rdf:resource="z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTia"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir tio a partir de hermanos del padre</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneHermano"/>
+                                <swrl:argument1 rdf:resource="y"/>
+                                <swrl:argument2 rdf:resource="z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneTio"/>
+                        <swrl:argument1 rdf:resource="x"/>
+                        <swrl:argument2 rdf:resource="z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir la bisabuela a partir de la madre de los padre de los padres</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                                <swrl:argument1 rdf:resource="p"/>
+                                <swrl:argument2 rdf:resource="a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre"/>
+                                        <swrl:argument1 rdf:resource="a"/>
+                                        <swrl:argument2 rdf:resource="b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneBisabuela"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deducir abuela apartir de la madre de los padres</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tienePadres"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneMadre"/>
+                                <swrl:argument1 rdf:resource="p"/>
+                                <swrl:argument2 rdf:resource="a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sam/ontologies/2016/3/untitled-ontology-6#tieneAbuela"/>
+                        <swrl:argument1 rdf:resource="y"/>
+                        <swrl:argument2 rdf:resource="a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
