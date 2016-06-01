@@ -8,28 +8,24 @@ import Helpers.Log;
 public class ViewManager {
 
 
-     BaseOntology ontology;
+    BaseOntology ontology;
 
 
-
-    public  void setOntology(BaseOntology ontology){
+    public void setOntology(BaseOntology ontology) {
         this.ontology = ontology;
     }
 
-    public void displayOntologyOptions(){
+    public void displayOntologyOptions() {
 
         boolean display = true;
-        while(display){
-            Log.message("Enter the option:");
-            this.ontology.displayOntologyOptions();
-            display = this.ontology.callToOption(Input.readInt());
-            Log.message("========================================0");
-        }
+        // while(display){
+        //   Log.message("Enter the option:");
+        // this.ontology.displayOntologyOptions();
+        display = this.ontology.callToOption(Input.readInt());
+        //Log.message("========================================0");
+        //}
 
     }
-
-
-
 
 
 }

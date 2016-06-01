@@ -1,0 +1,1205 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#"
+     xml:base="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ticademia="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#correspondeA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#correspondeA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#perteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#perteneceA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEnvio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEnvio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneModulo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneModulo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaEnvio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaEnvio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaFin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaFin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaInicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaInicio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#retroalimentacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#retroalimentacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#BuenEstudiante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#BuenEstudiante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#MalEstudiante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EjercicioCodigo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EjercicioCodigo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EjercicioRespuestaMultiple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EjercicioRespuestaMultiple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioInvalido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioInvalido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioValido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioValido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#MalEstudiante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#MalEstudiante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioValido"/>
+        <ticademia:correspondeA rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio1"/>
+        <ticademia:fechaEnvio rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-10T00:00:00</ticademia:fechaEnvio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+        <ticademia:perteneceA rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Matematicas"/>
+        <ticademia:tieneEnvio rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Matematicas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Matematicas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+        <ticademia:tieneModulo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo1"/>
+        <ticademia:tieneModulo rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+        <ticademia:tieneEjercicio rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio1"/>
+        <ticademia:fechaFin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-31T00:00:00</ticademia:fechaFin>
+        <ticademia:fechaInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-01T00:00:00</ticademia:fechaInicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+        <ticademia:tieneEjercicio rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Ejercicio2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#eje">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envDate">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modIniDate">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muestra todos los estudiantes y los envios invalidos</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estudiantesConEnviosValidos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#perteneceA"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEnvio"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioValido"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muestra cada estudiante y el número de envios que ha realizado</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estudianteYEnvios</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEnvio"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estudiantesEnCurso</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#perteneceA"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cursosyEjercicios</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Curso"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneModulo"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#eje"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#cur"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#eje"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EnviosInvalidos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaEnvio"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envDate"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#correspondeA"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaFin"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#after"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envDate"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clasifica los envios válidos</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_enviosValidos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#correspondeA"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaEnvio"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaFin"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaInicio"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modIniDate"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#after"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modIniDate"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#before"/>
+                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioValido"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clasifica los que son envios validos</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_enviosValidos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#correspondeA"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaEnvio"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaFin"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaInicio"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modIniDate"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#after"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modIniDate"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#before"/>
+                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioValido"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clasifica los envios invalidos</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_enviosInvalidos</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Envio"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#correspondeA"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaEnvio"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Modulo"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#fechaFin"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#mod"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#after"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#envEnvDate"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#modFinDate"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#EnvioInvalido"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estudiantesyEnvios</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#Estudiante"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEnvio"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/ticademia#tieneEjercicio"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#env"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#est"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/afpinedac/ontologies/2016/4/untitled-ontology-40#ejer"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
